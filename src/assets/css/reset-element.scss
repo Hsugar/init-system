@@ -1,0 +1,200 @@
+/* reset element-ui.css */
+
+/************ el-table ************/
+.el-table {
+	border-top: 1px solid #EDEDED;
+	padding-top: 30px;
+	margin: 0;
+	.el-table__header-wrapper {
+		border-top: 1px solid #EDEDED;
+	}
+	table {
+		display: block;
+		font-size: 14px;
+		text-align: center;
+		width: 100%;
+		th {
+			background: #f5f5f5;
+			margin-top: 20px;
+			font-weight: 500;
+		}
+		tr {
+			height: 40px;
+			border-bottom: 1px solid #EDEDED;
+		}
+		.cell {
+			text-align: center;
+		}
+	}
+}
+.el-table.noborder tbody td {
+	border-bottom: 0
+}
+
+/************ el-button ************/
+
+/*选项中的button*/
+.el-button {
+	height: 35px;
+	line-height: 13px;
+	padding: 12px 16px;
+}
+/*表格中的button*/
+.el-table {
+	.el-button {
+		border: none;
+		margin-right: 5px;
+		color: #606266;
+		font-size: 12px;
+		background: none;
+	}
+	.el-button:hover {
+		color: #f00;
+		text-decoration: underline;
+	}
+}
+
+/************ el-select ************/
+.el-input__inner {
+	height: 30px;
+	line-height: 30px;
+}
+.el-select {
+	width: 150px;
+	.el-input__icon {
+		line-height: 30px;
+	}
+}
+.item {
+	.el-input {
+		width: 150px;
+	}
+}
+
+/************ date-picker ************/
+.date-picker {
+	.el-date-editor--datetimerange.el-input__inner {
+		width: 340px;
+	}
+	.el-date-editor .el-range__icon,
+	.el-date-editor .el-range-separator {
+		line-height: 25px;
+	}
+}
+.el-dialog__wrapper {
+	width: 100%;
+	background: rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 20;
+}
+.el-dialog__header {
+	//border-top: 4px solid #C2CBD8;
+	padding: 30px;
+}
+.createUnionP .el-dialog__header {
+	padding: 30px 0 30px 0;
+}
+.el-dialog__title {
+	font-size: 26px;
+}
+
+.el-dialog__headerbtn {
+	border-radius: 50%;
+	height: 32px;
+	width: 32px;
+	border: 1px solid #8BA0B7;
+	text-align: center;
+	line-height: 32px;
+	color: #8BA0B7;
+	right: 8px;
+	top: 8px;
+}
+
+.el-dialog__body {
+	padding: 0 0 28px 0;
+}
+
+.createUnionP .el-dialog__body {
+	padding: 0 0 28px 0;
+}
+
+
+/* pagination */
+.el-pagination {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.el-pager li,
+.el-pagination .btn-next,
+.el-pagination .btn-prev {
+	background-color: transparent;
+}
+
+.el-pagination .btn-prev,
+.el-pagination .btn-next {
+	color: #666;
+	border-radius: 3px;
+	height: 28px;
+	width: 28px;
+	padding: 0;
+	min-width: auto;
+	border: 1px solid #222831;
+
+	i.el-icon {
+		display: inline-block;
+	}
+}
+
+.el-pagination__total {
+	color: inherit;
+	margin-right: 40px;
+}
+
+.el-pagination__jump {
+	margin-left: 40px;
+	color: inherit;
+}
+
+.el-pagination__jump .el-input__inner {
+	color: inherit;
+}
+
+.paging {
+	padding-bottom: 20px;
+	text-align: center;
+
+	.btn-prev {
+		margin-right: 55px;
+	}
+
+	.current {
+		position: relative;
+		bottom: -25px;
+		width: 55px;
+		left: -23px;
+		text-align: center;
+		display: inline-block;
+	}
+}
+
+.pagination-warrp {
+	.btn-prev {
+		margin-right: 55px;
+	}
+
+	.current {
+		position: relative;
+		bottom: 0;
+		width: 55px;
+		left: 168px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

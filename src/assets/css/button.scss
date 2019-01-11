@@ -1,0 +1,52 @@
+
+/* btn */
+.w-btn {
+  width: 100px;
+  height: 38px;
+  line-height: 38px;
+  display: inline-block;
+  border-radius: 19px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  background: linear-gradient(to right, #4BC7A9, #3F77C8);
+}
+.w-btn-primary{
+    background-color: #568EAE;
+    color: #fff;
+    border-color: #568EAE;
+}
+.w-btn-danger{
+    background-color: #F05F5C;
+    color: #fff;
+    border-color: #F05F5C;
+}
+
+.w-btn-success{
+    background-color: #468CC8;
+    color: #fff;
+    border-color: #468CC8;
+}
+
+.w-btn-info{
+    background-color: #7E96AF;
+    color: #fff;
+    border-color: #7E96AF;
+}
+.w-btn-disabled{
+    background-color: #f5f5f5;
+    color: #ccc;
+    border-color: #e5e5e5;
+    cursor: no-drop;
+}
+.w-btn-dismal{
+    background-color: #BECAD7;
+    color: #fff;
+    border-color: #BECAD7;
+}
+.color-btn-liner {
+    border-radius:20px;
+    border: none;
+    background: linear-gradient(to right, #FBAD8C , #E5658F) !important;
+}

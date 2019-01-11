@@ -1,0 +1,272 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+	margin: 0;
+	padding: 0
+}
+
+//set page min-width
+body,
+html {
+	min-width: 1180px;
+	overflow-x: scroll;
+}
+
+html {
+	color: #000;
+	overflow-y: scroll;
+	overflow: -moz-scrollbars
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font: 12px/1.5 Arial, 'Avenir', Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%
+}
+
+em {
+	font-style: normal
+}
+
+small {
+	font-size: 12px
+}
+
+ul,
+ol {
+	list-style: none
+}
+
+a {
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+legend {
+	color: #000;
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+	outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+img {
+	-ms-interpolation-mode: bicubic
+}
+
+textarea {
+	resize: vertical
+}
+
+.left {
+	float: left
+}
+
+.right {
+	float: right
+}
+
+.overflow {
+	overflow: hidden
+}
+
+.hide {
+	display: none
+}
+
+.block {
+	display: block
+}
+
+.inline {
+	display: inline
+}
+
+label,
+button {
+	cursor: pointer
+}
+
+.clearfix:after {
+	content: '\20';
+	display: block;
+	height: 0;
+	clear: both
+}
+
+.clearfix {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	visibility: hidden;
+	overflow: hidden
+}
+
+@mixin placeholder($color) {
+	:-moz-placeholder {
+		/* Mozilla Firefox 4 to 18 */
+		color: $color;
+	}
+
+	::-moz-placeholder {
+		/* Mozilla Firefox 19+ */
+		color: $color;
+	}
+
+	input:-ms-input-placeholder,
+	textarea:-ms-input-placeholder {
+		color: $color;
+	}
+
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder {
+		color: $color;
+	}
+}
+
+
+html {
+	overflow: hidden;
+}
+
+html,
+body {
+	height: 100%;
+	overflow-x: auto;
+}
+
+body {
+	background: #FAFAFB;
+	@include placeholder(#82858a);
+}
+
+input::-webkit-search-cancel-button {
+	display: none;
+}
+
+input[type=search]::-ms-clear {
+	display: none;
+}
+
+.p26 {
+	padding: 0 26px;
+}
+
+$bgColor: #F5F5F5;
+
+.bg-empty {
+	width: 100%;
+	height: 12px;
+	background: $bgColor;
+
+}
+
+.minPanel {
+	border-radius: 3px
+}
+
+
+/* 自定义滚动条样式 */
+.scrollbar {
+
+	/*滚动条整体样式*/
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+	}
+
+	/*滚动条里面小方块*/
+	&::-webkit-scrollbar-thumb {
+		border-radius: 6px;
+		box-shadow: inset 0 0 1px rgb(75, 79, 86);
+		-webkit-box-shadow: inset 0 0 1px rgb(75, 79, 86);
+		background: #4E5259;
+	}
+}
+
+//hover 效果
+//粉色按钮hover
+.line-hover-powder:hover {
+	background: linear-gradient(to left, #eb7f9a, #faac99) !important;
+}
+
+.line-hover-blue:hover {
+	background: linear-gradient(to left, #5386cd, #5dcdb2) !important;
+}
+
+.line-hover-defaut:hover {
+	border: 1px solid rgba(255, 255, 255, 0) !important;
+	color: #fff !important;
+	background: linear-gradient(to left, #eb7f9a, #faac99) !important;
+}
+
+@import './button';
+
+/* 重置 element-ui样式 */
+@import './reset-element';
+
+/* 引入公用组件的样式 */
+@import './base';
+
+/**
+ *  此处可引入各非公用组件的样式
+ *  如: @import './dashboard';
+ */
+
+
+// @import './wealth';

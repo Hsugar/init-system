@@ -1,0 +1,152 @@
+$wealth-color: #82858a;
+
+.wealth{
+	.minPanel{
+		padding: 10px 16px;
+		color: $wealth-color;
+		margin-bottom:20px;
+	}
+	.top{
+		height: 40px;
+		line-height: 40px;
+	}
+	.tabs{
+		display:flex;
+		a{
+			padding-left: 20px;
+			padding-right: 20px;
+			border:1px solid #222831;
+			line-height:40px;
+			color: $wealth-color;
+			margin-left: -1px;
+			&:first-child{
+				border-top-left-radius: 3px;
+				border-bottom-left-radius: 3px;
+			}
+			&:last-child{
+				border-top-right-radius: 3px;
+				border-bottom-right-radius: 3px;
+			}
+		}
+		a:hover,
+		a.active{
+			color:#fff;
+		}
+	}
+
+	.summary{
+		margin-top: 20px;
+		font-size: 12px;
+		display:flex;
+		li{
+			width: 50%;
+			text-align: center;
+		}
+		h3{
+			font-weight: 500;
+			line-height:32px;
+		}
+		strong{
+			font-size:38px;
+			color:#fff;
+			margin-right: 6px;
+			font-weight:500;
+		}
+	}
+	.chartBox{
+		margin-top:35px;
+		margin-bottom: 24px;
+		display:flex;
+		height:240px;
+		
+		.lineBox{
+			flex:1;
+			position:relative;
+		}
+		.lineBox:after{
+			content: '';
+			position:absolute;
+			right:0;
+			bottom:62px;
+			height:75px;
+			background-color:#222831;
+			width:1px;
+		}
+		.pieBox{
+			width:35%;
+		}
+	}
+
+
+	.table{
+		margin-left:40px;
+		margin-right:40px;
+		text-align:center;
+		table{
+			width:100%;
+		}
+		tbody tr{
+			border-top: 1px solid #222831;
+		}
+		th{
+			font-weight:500;
+			font-size:16px;
+			color: $wealth-color;
+			padding-top:24px;
+			padding-bottom:22px;
+			line-height:2;
+		}
+		td{
+			color:#d1d1d1;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			line-height:25px;
+		}
+
+	}
+
+	.gradient{
+    background: linear-gradient(to left, #FBAD8C, #E5668F);
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+	.gradient.toRight{
+    background: linear-gradient(to right, #FBAD8C, #E5668F);
+    -webkit-background-clip: text;
+		color: transparent;
+	}
+
+
+	.el-pagination{
+		color:$wealth-color;
+	}
+}
+
+/* detail */
+.wealth.detail{
+	.minPanel{
+		min-height: calc(100vh - 150px);
+		box-sizing: border-box
+	}
+	.selectbox{
+		color: $wealth-color;
+		font-size:14px;
+		label{
+			margin-right:10px;
+		}
+		.select{
+			height:40px;
+			line-height:40px;
+			box-sizing:border-box;
+			border: 1px solid #222831;
+			border-radius:3px;
+			color:inherit;
+			padding-left:12px;
+			width:204px;
+			background-color:transparent;
+		}
+	}
+	.table{
+		margin-top:20px;
+	}
+}

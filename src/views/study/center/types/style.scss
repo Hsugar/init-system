@@ -1,0 +1,116 @@
+@import "@/assets/styles/base.scss";
+.main{
+  @include padding;
+
+  .ml15 {
+    margin-left: 15px;
+  }
+
+  .el-input{
+    width: 240px;
+    height:32px;
+  }
+  .header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    .el-form-item {
+      margin-bottom: 0;
+    }
+    .item{
+      flex: auto;
+      &:first-child{
+        display:flex;
+        justify-content: space-between;
+      }
+    }
+    .el-form-item{
+      margin-right: 24px;
+    }
+  }
+  .hd-banner{
+    padding-bottom:24px;
+  }
+  .item-banner,
+  .item-thumb{
+    width:96px;
+    height:96px;
+    cursor:pointer;
+    border:1px solid #D8D7D6;
+    position: relative;
+    .img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: center / cover no-repeat; 
+    }
+    .icon {
+      position: absolute;
+      right: 4px;
+      bottom: 4px;
+    }
+  }
+  .item-banner{
+    width:250px;
+    height:100px;
+  }
+  .item-action{
+    display: flex;
+    align-items: center;
+    .ac-up{
+      color:$errorColor;
+    }
+    &>div{
+      display:flex;
+      text-align: left;
+      color: $mainColor;
+      margin-left:40px;
+      flex-direction: column;
+      &>span{
+        margin-top: 4px;
+        margin-bottom: 4px;
+        display: block;
+        height:16px;
+        line-height:16px;
+      }
+    }
+    .cursor{
+      cursor: pointer;
+    }
+    .btn-up,
+    .btn-down{
+      width:16px;
+      cursor: pointer;
+      background: url(../../../../assets/images/icon/ic_up.png) no-repeat 50% 50%;
+      background-size: 100% 100%;
+      &.disabled{
+        cursor: no-drop;
+        background-image: url(../../../../assets/images/icon/ic_up_dis.png)
+      }
+    }
+    .btn-up{
+      transform: rotate(180deg);
+    }
+
+  }
+  .icon-lick,
+  .icon-dislick{
+    display:inline-block;
+    vertical-align:middle;
+    height:14px;
+    width:14px;
+    margin-top:-2px;
+    margin-right:2px;
+    background:url(../../../../assets/images/icon/ic_like.png) no-repeat 50% 50%;
+    background-size:contain
+  }
+  .icon-dislick{
+    background-image: url(../../../../assets/images/icon/ic_dislike.png)
+  }
+}
+.com-bd{
+  img{
+    display:block;
+    max-width:100%;
+  }
+}
