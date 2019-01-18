@@ -30,7 +30,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 头部跟侧栏导航采用动态数据 配置在config文件夹
 
-### 添加编辑删除弹框有组件，FormItem  FormInput 结合表单验证
+## 添加编辑删除弹框有组件，FormItem  FormInput 结合表单验证
 
 ### axios请求封装，相应具体接口文件可以在service文件夹根据模块单独建立js文件，这里我才用的是es7 async  await结合 返回promise对象
 
