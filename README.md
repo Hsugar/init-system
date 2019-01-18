@@ -1,4 +1,4 @@
-# lexue-v1
+﻿# lexue-v1
 
 ## Project setup
 ```
@@ -10,22 +10,22 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+## Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Run your tests
+## Run your tests
 ```
 npm run test
 ```
 
-### Lints and fixes files
+## Lints and fixes files
 ```
 npm run lint
 ```
 
-### Customize configuration
+## Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 头部跟侧栏导航采用动态数据 配置在config文件夹
